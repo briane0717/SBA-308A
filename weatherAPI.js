@@ -57,7 +57,26 @@ function displayWeatherData(data) {
   card.appendChild(weatherEmoji);
 }
 
-function getWeatherEmoji(weatherId) {}
+function getWeatherEmoji(weatherId) {
+  switch (true) {
+    case weatherId >= 200 && weatherId <= 232:
+      return "⛈️";
+    case weatherId >= 300 && weatherId <= 321:
+      return "🌦️";
+    case weatherId >= 500 && weatherId <= 531:
+      return "🌧️";
+    case weatherId >= 600 && weatherId <= 622:
+      return "☃️";
+    case weatherId >= 701 && weatherId <= 781:
+      return "🌪️";
+    case weatherId === 800:
+      return "😎";
+    case weatherId >= 801 && weatherId <= 804:
+      return "☁️";
+    default:
+      return "❓";
+  }
+}
 
 function displayError(message) {
   errorDisplay.textContent = message;
