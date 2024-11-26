@@ -1,11 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trivia</title>
-  </head>
-  <body>
-    <script src="api.js"></script>
-  </body>
-</html>
+<div>
+  <label for="category">Category:</label>
+  <select id="category">
+    <option value="">All Categories</option>
+    <option value="9">General Knowledge</option>
+    <option value="18">Science</option>
+    <option value="22">Geography</option>
+    <!-- Add more categories as needed -->
+  </select>
+
+  <label for="difficulty">Difficulty:</label>
+  <select id="difficulty">
+    <option value="">Any Difficulty</option>
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+
+  <button id="search-btn">Search</button>
+</div>
+
+<div id="question-container"></div>
+<div id="answers-container"></div>
+<div id="score"></div>
+<div id="feedback"></div>
+<button id="next-btn" style="display: none">Next Question</button>
