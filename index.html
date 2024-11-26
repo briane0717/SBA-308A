@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="weather.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <input
-      id="searchBar"
-      type="text"
-      placeholder="Search by song, artist, album, genre"
-    />
-    <button id="submitBtn" type="submit">Submit</button>
-    <div id="resultsContainer"></div>
-    <script src="api.js"></script>
+    <form class="weatherForm">
+      <input type="text" class="cityInput" placeholder="Enter City" />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="card" style="display: none"></div>
   </body>
 </html>
